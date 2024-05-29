@@ -17,6 +17,7 @@ class ArduinoSerialNode(Node):
         try:
             self.serial_port = serial.Serial('/dev/ttyACM0', 115200, timeout=1)
             self.get_logger().info('Node started and serial port opened')
+            time.sleep(3)
         except serial.SerialException as e:
             self.get_logger().error(f"Failed to open serial port: {e}")
 
