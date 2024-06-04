@@ -1,0 +1,29 @@
+[0.558s] Invoking command in '/home/jundrag/ros2_ws/build/motor_control': PYTHONPATH=/home/jundrag/ros2_ws/build/motor_control/prefix_override:/home/jundrag/ros2_ws/install/motor_control/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py develop --editable --build-directory /home/jundrag/ros2_ws/build/motor_control/build --no-deps symlink_data
+[0.782s] running develop
+[0.901s] running egg_info
+[0.901s] creating motor_control.egg-info
+[0.901s] writing motor_control.egg-info/PKG-INFO
+[0.901s] writing dependency_links to motor_control.egg-info/dependency_links.txt
+[0.901s] writing entry points to motor_control.egg-info/entry_points.txt
+[0.901s] writing requirements to motor_control.egg-info/requires.txt
+[0.901s] writing top-level names to motor_control.egg-info/top_level.txt
+[0.902s] writing manifest file 'motor_control.egg-info/SOURCES.txt'
+[0.929s] reading manifest file 'motor_control.egg-info/SOURCES.txt'
+[0.930s] writing manifest file 'motor_control.egg-info/SOURCES.txt'
+[0.960s] running build_ext
+[0.961s] Creating /home/jundrag/ros2_ws/install/motor_control/lib/python3.8/site-packages/site.py
+[0.962s] Creating /home/jundrag/ros2_ws/install/motor_control/lib/python3.8/site-packages/motor-control.egg-link (link to .)
+[0.963s] Installing controller1 script to /home/jundrag/ros2_ws/install/motor_control/lib/motor_control
+[0.963s] Installing controller2 script to /home/jundrag/ros2_ws/install/motor_control/lib/motor_control
+[0.963s] Installing serial_bridge script to /home/jundrag/ros2_ws/install/motor_control/lib/motor_control
+[0.963s] 
+[0.964s] Installed /home/jundrag/ros2_ws/build/motor_control
+[0.964s] running symlink_data
+[0.964s] creating /home/jundrag/ros2_ws/install/motor_control/share/ament_index
+[0.964s] creating /home/jundrag/ros2_ws/install/motor_control/share/ament_index/resource_index
+[0.964s] creating /home/jundrag/ros2_ws/install/motor_control/share/ament_index/resource_index/packages
+[0.964s] symbolically linking /home/jundrag/ros2_ws/build/motor_control/resource/motor_control -> /home/jundrag/ros2_ws/install/motor_control/share/ament_index/resource_index/packages
+[0.964s] symbolically linking /home/jundrag/ros2_ws/build/motor_control/package.xml -> /home/jundrag/ros2_ws/install/motor_control/share/motor_control
+[0.964s] creating /home/jundrag/ros2_ws/install/motor_control/share/motor_control/launch
+[0.964s] symbolically linking /home/jundrag/ros2_ws/build/motor_control/launch/dual_motor_launch.py -> /home/jundrag/ros2_ws/install/motor_control/share/motor_control/launch
+[0.985s] Invoked command in '/home/jundrag/ros2_ws/build/motor_control' returned '0': PYTHONPATH=/home/jundrag/ros2_ws/build/motor_control/prefix_override:/home/jundrag/ros2_ws/install/motor_control/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py develop --editable --build-directory /home/jundrag/ros2_ws/build/motor_control/build --no-deps symlink_data

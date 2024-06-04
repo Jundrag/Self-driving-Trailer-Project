@@ -1,0 +1,27 @@
+running develop
+running egg_info
+creating motor_control.egg-info
+writing motor_control.egg-info/PKG-INFO
+writing dependency_links to motor_control.egg-info/dependency_links.txt
+writing entry points to motor_control.egg-info/entry_points.txt
+writing requirements to motor_control.egg-info/requires.txt
+writing top-level names to motor_control.egg-info/top_level.txt
+writing manifest file 'motor_control.egg-info/SOURCES.txt'
+reading manifest file 'motor_control.egg-info/SOURCES.txt'
+writing manifest file 'motor_control.egg-info/SOURCES.txt'
+running build_ext
+Creating /home/jundrag/ros2_ws/install/motor_control/lib/python3.8/site-packages/site.py
+Creating /home/jundrag/ros2_ws/install/motor_control/lib/python3.8/site-packages/motor-control.egg-link (link to .)
+Installing controller1 script to /home/jundrag/ros2_ws/install/motor_control/lib/motor_control
+Installing controller2 script to /home/jundrag/ros2_ws/install/motor_control/lib/motor_control
+Installing serial_bridge script to /home/jundrag/ros2_ws/install/motor_control/lib/motor_control
+
+Installed /home/jundrag/ros2_ws/build/motor_control
+running symlink_data
+creating /home/jundrag/ros2_ws/install/motor_control/share/ament_index
+creating /home/jundrag/ros2_ws/install/motor_control/share/ament_index/resource_index
+creating /home/jundrag/ros2_ws/install/motor_control/share/ament_index/resource_index/packages
+symbolically linking /home/jundrag/ros2_ws/build/motor_control/resource/motor_control -> /home/jundrag/ros2_ws/install/motor_control/share/ament_index/resource_index/packages
+symbolically linking /home/jundrag/ros2_ws/build/motor_control/package.xml -> /home/jundrag/ros2_ws/install/motor_control/share/motor_control
+creating /home/jundrag/ros2_ws/install/motor_control/share/motor_control/launch
+symbolically linking /home/jundrag/ros2_ws/build/motor_control/launch/dual_motor_launch.py -> /home/jundrag/ros2_ws/install/motor_control/share/motor_control/launch

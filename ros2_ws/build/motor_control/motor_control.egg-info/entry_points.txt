@@ -1,0 +1,6 @@
+[console_scripts]
+controller1 = motor_control.controller1:main
+controller2 = motor_control.controller2:main
+serial_bridge = motor_control.serial_bridge:main
+tankturn = motor_control.tankturn:main
+

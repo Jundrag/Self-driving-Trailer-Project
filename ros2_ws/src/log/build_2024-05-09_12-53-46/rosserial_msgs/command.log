@@ -1,0 +1,2 @@
+Invoking command in '/home/jundrag/ros2_ws/src/build/rosserial_msgs': /usr/bin/cmake /home/jundrag/ros2_ws/src/rosserial/rosserial_msgs -DCATKIN_INSTALL_INTO_PREFIX_ROOT=0 -DCATKIN_SYMLINK_INSTALL=ON -DCMAKE_INSTALL_PREFIX=/home/jundrag/ros2_ws/src/install/rosserial_msgs
+Invoked command in '/home/jundrag/ros2_ws/src/build/rosserial_msgs' returned '1': /usr/bin/cmake /home/jundrag/ros2_ws/src/rosserial/rosserial_msgs -DCATKIN_INSTALL_INTO_PREFIX_ROOT=0 -DCATKIN_SYMLINK_INSTALL=ON -DCMAKE_INSTALL_PREFIX=/home/jundrag/ros2_ws/src/install/rosserial_msgs

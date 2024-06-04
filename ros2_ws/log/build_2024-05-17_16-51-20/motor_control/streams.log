@@ -1,0 +1,26 @@
+[0.534s] Invoking command in '/home/jundrag/ros2_ws/src/motor_control': PYTHONPATH=/home/jundrag/ros2_ws/build/motor_control/prefix_override:/home/jundrag/ros2_ws/install/motor_control/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py egg_info --egg-base ../../build/motor_control build --build-base /home/jundrag/ros2_ws/build/motor_control/build install --record /home/jundrag/ros2_ws/build/motor_control/install.log --install-scripts $base/lib/motor_control --single-version-externally-managed install_data
+[0.719s] running egg_info
+[0.720s] writing ../../build/motor_control/motor_control.egg-info/PKG-INFO
+[0.720s] writing dependency_links to ../../build/motor_control/motor_control.egg-info/dependency_links.txt
+[0.720s] writing entry points to ../../build/motor_control/motor_control.egg-info/entry_points.txt
+[0.720s] writing requirements to ../../build/motor_control/motor_control.egg-info/requires.txt
+[0.720s] writing top-level names to ../../build/motor_control/motor_control.egg-info/top_level.txt
+[0.750s] reading manifest file '../../build/motor_control/motor_control.egg-info/SOURCES.txt'
+[0.751s] writing manifest file '../../build/motor_control/motor_control.egg-info/SOURCES.txt'
+[0.751s] running build
+[0.751s] running build_py
+[0.751s] copying motor_control/serial_bridge.py -> /home/jundrag/ros2_ws/build/motor_control/build/lib/motor_control
+[0.751s] running install
+[0.752s] running install_lib
+[0.753s] copying /home/jundrag/ros2_ws/build/motor_control/build/lib/motor_control/serial_bridge.py -> /home/jundrag/ros2_ws/install/motor_control/lib/python3.8/site-packages/motor_control
+[0.753s] byte-compiling /home/jundrag/ros2_ws/install/motor_control/lib/python3.8/site-packages/motor_control/serial_bridge.py to serial_bridge.cpython-38.pyc
+[0.754s] running install_data
+[0.754s] running install_egg_info
+[0.756s] removing '/home/jundrag/ros2_ws/install/motor_control/lib/python3.8/site-packages/motor_control-0.0.0-py3.8.egg-info' (and everything under it)
+[0.756s] Copying ../../build/motor_control/motor_control.egg-info to /home/jundrag/ros2_ws/install/motor_control/lib/python3.8/site-packages/motor_control-0.0.0-py3.8.egg-info
+[0.757s] running install_scripts
+[0.771s] Installing controller1 script to /home/jundrag/ros2_ws/install/motor_control/lib/motor_control
+[0.771s] Installing controller2 script to /home/jundrag/ros2_ws/install/motor_control/lib/motor_control
+[0.771s] Installing serial_bridge script to /home/jundrag/ros2_ws/install/motor_control/lib/motor_control
+[0.772s] writing list of installed files to '/home/jundrag/ros2_ws/build/motor_control/install.log'
+[0.788s] Invoked command in '/home/jundrag/ros2_ws/src/motor_control' returned '0': PYTHONPATH=/home/jundrag/ros2_ws/build/motor_control/prefix_override:/home/jundrag/ros2_ws/install/motor_control/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py egg_info --egg-base ../../build/motor_control build --build-base /home/jundrag/ros2_ws/build/motor_control/build install --record /home/jundrag/ros2_ws/build/motor_control/install.log --install-scripts $base/lib/motor_control --single-version-externally-managed install_data
