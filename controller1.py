@@ -64,11 +64,11 @@ class MotorController(Node):
 
     def query_motor_status(self):
         self.get_logger().info('Executing query_motor_status')
-        cmd = [0x3E, 0x9C, 0x01, 0x07]
-        cmd.append(self.calculate_checksum(cmd))
+        cmd = [0x3E, 0x9C, 0x01, 0x00, 0xDB]
+        #print(type(self.calculate_checksum(cmd)))
+        #md.append(self.calculate_checksum(cmd))
         self.serial.write(bytearray(cmd))
         response = self.serial.read(10)
-        self.get_logger().info(f'---------------------------------------')
         self.get_logger().info(f'Received raw data (len={len(response)}): {response.hex()}')
 
         if len(response) == 10:
@@ -76,12 +76,19 @@ class MotorController(Node):
         else:
             self.get_logger().error(f'Failed to read full response from motor. Received length: {len(response)}.')
 
+
     def process_response(self, response):
         self.get_logger().info('Processing response...')
         try:
             self.get_logger().info(f'Full response data: {response.hex()}')
 
-            # Parsing data based on your manual
+            # Checksum verification
+            data_checksum = self.calculate_checksum(response[:-1])
+            expected_checksum = response[-1]
+            if data_checksum != expected_checksum:
+                self.get_logger().error(f'Checksum mismatch: calculated {data_checksum}, expected {expected_checksum}')
+                return
+
             # Motor temperature (int8_t)
             motor_temp = response[0]
             self.get_logger().info(f'Motor temperature: {motor_temp}')
@@ -99,7 +106,7 @@ class MotorController(Node):
             self.get_logger().info(f'Parsed 14-bit encoder value: {encoder_14bit}')
 
             # Encoder 18-bit position (uint32_t, taking 3 bytes and masking)
-            encoder_18bit = (response[5] | (response[6] << 8) | (response[7] << 16)) & 0x3FFFF
+            encoder_18bit = ((response[5] | (response[6] << 8) | (response[7] << 16)) & 0x3FFFF)
             self.get_logger().info(f'Parsed 18-bit encoder value: {encoder_18bit}')
 
             # Logging and publishing the values
@@ -119,7 +126,7 @@ class MotorController(Node):
             time_since_last_command = (now - self.last_command_time).nanoseconds / 1e9
             self.get_logger().info(f'Time since last command: {time_since_last_command} seconds')
 
-            if time_since_last_command > 0.02:  # Example: Query status every 0.1 seconds
+            if time_since_last_command > 0.0:  # Example: Query status every 0.1 seconds
                 self.get_logger().info('Time condition met, calling query_motor_status')
                 self.query_motor_status()
             else:
