@@ -1,90 +1,127 @@
-import rclpy	# allow ROS2 fnc & comm in py
-from rclpy.node import Node	# import node class to create node
-import serial	# pyserial library for serial comm
-import time
+import rclpy
+from rclpy.node import Node
+import serial
 import struct
-
-from std_msgs.msg import String #new
+from std_msgs.msg import String
 
 class MotorController(Node):
     def __init__(self):
         super().__init__('motor_controller')
-        self.serial = serial.Serial('/dev/ttyUSB0', 115200, timeout=1)
+        self.serial = serial.Serial('/dev/ttyUSB0', 115200, timeout=1)  # motor right
         self.get_logger().info(f'serial: {self.serial}')
-        #new"
+
         self.subscription = self.create_subscription(
             String,
             'motor2_command_topic',
             self.command_callback,
             10
         )
-        #new"
-        print(f'serial: {self.serial}')
+        self.subscription2 = self.create_subscription(
+            String,
+            'motor2_angle_command_topic',
+            self.angle_callback,
+            10
+        )
+        self.subscription3 = self.create_subscription(
+            String,
+            'motor2_speed_limit_command_topic',
+            self.speed_limit_callback,
+            10
+        )
+        self.subscription4 = self.create_subscription(
+            String,
+            'control_mode_topic',
+            self.mode_callback,
+            10
+        )
 
-        #self.initialize_motor()
+        self.angle_d = 0
+        self.speed_dps = 0
+        self.control_mode = "angle"
 
-   #new  
+    def mode_callback(self, msg):
+        self.control_mode = msg.data
+        self.get_logger().info(f"Control mode changed to: {self.control_mode}")
+
     def command_callback(self, msg):
-        
-        # self.serial.write(msg.data.encode())
-        # self.get_logger().info(f'Command sent to motor2: {msg.data}')
+        if self.control_mode == "speed":
+            try:
+                speed_dps = int(msg.data)
+                command = self.create_motor_speed_command(speed_dps)
+                self.send_command(command)
+            except ValueError:
+                self.get_logger().error(f'Invalid command: {msg.data}')
 
-        #new"
-        try:
-            speed_dps = int(msg.data)
-        except ValueError:
-            self.get_logger().error(f'Invalid command: {msg.data}')
-            return
-        command = self.create_motor_speed_command(speed_dps)
-        self.send_command(command)
-        self.get_logger().info(f'Command sent to motor2: {msg.data}')
-        #new"
+    def angle_callback(self, msg):
+        if self.control_mode == "angle":
+            try:
+                self.angle_d = int(msg.data)
+                self.send_motor_angle_command()
+            except ValueError:
+                self.get_logger().error(f'Invalid angle command: {msg.data}')
+
+    def speed_limit_callback(self, msg):
+        if self.control_mode == "angle":
+            try:
+                self.speed_dps = int(msg.data)
+                self.send_motor_angle_command()
+            except ValueError:
+                self.get_logger().error(f'Invalid speed limit command: {msg.data}')
 
     def encode_speed(self, dps_speed):
-    # convert degrees per second to the int32_t representation considering 0.01 dps/LSB
-        encoded_speed = int(dps_speed / 0.01)  # convert the speed to the LSB unit used by the system
-        # Pack as little-endian int32
-        speed_bytes = struct.pack('<i', encoded_speed)  # '<i' denotes a little-endian signed int
+        encoded_speed = int(dps_speed / 0.01)
+        speed_bytes = struct.pack('<i', encoded_speed)
+        return speed_bytes
+
+    def encode_angle(self, angle):
+        encoded_angle = int(angle * 100)
+        angle_bytes = struct.pack('<q', encoded_angle)
+        return angle_bytes
+
+    def encode_speed_limit(self, speed):
+        if speed < 0:
+            speed = 0
+        encoded_speed = int(speed * 100)
+        speed_bytes = struct.pack('<I', encoded_speed)
         return speed_bytes
 
     def calculate_checksum(self, data_bytes):
         return sum(data_bytes) & 0xFF
 
     def create_motor_speed_command(self, speed_dps):
-    # frame command
         frame_head = 0x3E
-        cmd_id = 0xA2   # A2 = closed-loop speed control mode
-        device_id = 0x01    # motor ID
-        data_len = 4  # Set as constant 4 bytes as the example provided shows a fixed format
-        
-        frame_command = bytes([frame_head, cmd_id, device_id, data_len])   # type: bytes
-        frame_data = self.encode_speed(speed_dps) # little-endian int32 packed speed; type: bytes
-
-        frame_cmd_checksum = self.calculate_checksum(bytes([frame_head, cmd_id, device_id, data_len]))    # type: int
+        cmd_id = 0xA2
+        device_id = 0x01
+        data_len = 4
+        frame_command = bytes([frame_head, cmd_id, device_id, data_len])
+        frame_data = self.encode_speed(speed_dps)
+        frame_cmd_checksum = self.calculate_checksum(frame_command)
         frame_data_checksum = self.calculate_checksum(frame_data)
-        
         full_command = frame_command + bytes([frame_cmd_checksum]) + frame_data + bytes([frame_data_checksum])
-
         return full_command
 
-
-    # def initialize_motor(self):
-    #     #self.send_command([0x3E, 0x14, 0x01, 0x00, 0x53]) # default read setting
-    #     time.sleep(13)
-    #     self.send_command(self.create_motor_speed_command(1500)) # turn motor on
-    #     time.sleep(2)
-    #     self.send_command(self.create_motor_speed_command(2500)) 
-    #     time.sleep(2)
-    #     self.send_command(self.create_motor_speed_command(3000)) 
-    #     time.sleep(2)
-    #     self.send_command([0x3E, 0x80, 0x01, 0x00, 0xBF]) # Turn motor off
+    def create_motor_angle_command(self):
+        frame_head = 0x3E
+        cmd_id = 0xA4
+        device_id = 0x01
+        data_len = 0x0C
+        frame_command = bytes([frame_head, cmd_id, device_id, data_len])
+        angle_bytes = self.encode_angle(self.angle_d)
+        speed_bytes = self.encode_speed_limit(self.speed_dps)
+        frame_data = angle_bytes + speed_bytes
+        frame_cmd_checksum = self.calculate_checksum(frame_command)
+        frame_data_checksum = self.calculate_checksum(frame_data)
+        full_command = frame_command + bytes([frame_cmd_checksum]) + frame_data + bytes([frame_data_checksum])
+        return full_command
 
     def send_command(self, command):
-        command_bytes = bytearray(command)	#bytearray(list): returns array of given bytes
+        command_bytes = bytearray(command)
         self.serial.write(command_bytes)
-        response = self.serial.read(10)  # read the response from the motor
-        self.get_logger().info(f'Sent: {command_bytes.hex()} Received: {response.hex()}')
+        response = self.serial.read(10)
 
+    def send_motor_angle_command(self):
+        command = self.create_motor_angle_command()
+        self.send_command(command)
 
 def main(args=None):
     rclpy.init(args=args)
@@ -95,4 +132,3 @@ def main(args=None):
 
 if __name__ == '__main__':
     main()
-
