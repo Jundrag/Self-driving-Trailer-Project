@@ -12,26 +12,32 @@ class MotorController(Node):
 
         self.subscription = self.create_subscription(
             String,
-            'motor2_command_topic',
+            'motor2_speed_cmd',
             self.command_callback,
             10
         )
         self.subscription2 = self.create_subscription(
             String,
-            'motor2_angle_command_topic',
+            'motor2_angle_cmd',
             self.angle_callback,
             10
         )
         self.subscription3 = self.create_subscription(
             String,
-            'motor2_speed_limit_command_topic',
+            'motor2_speed_limit_cmd',
             self.speed_limit_callback,
             10
         )
         self.subscription4 = self.create_subscription(
             String,
-            'control_mode_topic',
+            'control_mode',
             self.mode_callback,
+            10
+        )
+        self.subscription5 = self.create_subscription(
+            String,
+            'trailer_pose',
+            self.camera_callback,
             10
         )
 
@@ -39,6 +45,8 @@ class MotorController(Node):
         self.speed_dps = 0
         self.control_mode = "angle"
 
+    def camera_callback(self, msg):
+        return
     def mode_callback(self, msg):
         self.control_mode = msg.data
         self.get_logger().info(f"Control mode changed to: {self.control_mode}")
