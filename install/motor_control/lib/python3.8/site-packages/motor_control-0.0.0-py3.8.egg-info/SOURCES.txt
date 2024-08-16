@@ -1,0 +1,30 @@
+package.xml
+setup.cfg
+setup.py
+../../build/motor_control/motor_control.egg-info/PKG-INFO
+../../build/motor_control/motor_control.egg-info/SOURCES.txt
+../../build/motor_control/motor_control.egg-info/dependency_links.txt
+../../build/motor_control/motor_control.egg-info/entry_points.txt
+../../build/motor_control/motor_control.egg-info/requires.txt
+../../build/motor_control/motor_control.egg-info/top_level.txt
+../../build/motor_control/motor_control.egg-info/zip-safe
+launch/dual_motor_launch.py
+motor_control/__init__.py
+motor_control/actuator_control.py
+motor_control/controller1.py
+motor_control/controller1_integration.py
+motor_control/controller1_saving.py
+motor_control/controller2 (copy).py
+motor_control/controller2.py
+motor_control/joystick (copy).py
+motor_control/joystick.py
+motor_control/joystick_speed_control.py
+motor_control/monitor_motor.py
+motor_control/realsense_camera.py
+motor_control/realsense_camera_node.py
+motor_control/serial_bridge.py
+motor_control/tankturn.py
+resource/motor_control
+test/test_copyright.py
+test/test_flake8.py
+test/test_pep257.py

@@ -1,0 +1,37 @@
+[0.541s] Invoking command in '/home/jun/ros2_ws/src/motor_control': PYTHONPATH=/home/jun/ros2_ws/build/motor_control/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/jun/ros2_ws/install/motor_control/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py egg_info --egg-base ../../build/motor_control build --build-base /home/jun/ros2_ws/build/motor_control/build install --record /home/jun/ros2_ws/build/motor_control/install.log --install-scripts $base/lib/motor_control --single-version-externally-managed install_data
+[0.726s] running egg_info
+[0.727s] writing ../../build/motor_control/motor_control.egg-info/PKG-INFO
+[0.727s] writing dependency_links to ../../build/motor_control/motor_control.egg-info/dependency_links.txt
+[0.727s] writing entry points to ../../build/motor_control/motor_control.egg-info/entry_points.txt
+[0.727s] writing requirements to ../../build/motor_control/motor_control.egg-info/requires.txt
+[0.727s] writing top-level names to ../../build/motor_control/motor_control.egg-info/top_level.txt
+[0.756s] reading manifest file '../../build/motor_control/motor_control.egg-info/SOURCES.txt'
+[0.757s] writing manifest file '../../build/motor_control/motor_control.egg-info/SOURCES.txt'
+[0.757s] running build
+[0.757s] running build_py
+[0.757s] copying motor_control/joystick.py -> /home/jun/ros2_ws/build/motor_control/build/lib/motor_control
+[0.757s] copying motor_control/controller2.py -> /home/jun/ros2_ws/build/motor_control/build/lib/motor_control
+[0.758s] copying motor_control/controller1.py -> /home/jun/ros2_ws/build/motor_control/build/lib/motor_control
+[0.758s] running install
+[0.759s] running install_lib
+[0.759s] copying /home/jun/ros2_ws/build/motor_control/build/lib/motor_control/joystick.py -> /home/jun/ros2_ws/install/motor_control/lib/python3.8/site-packages/motor_control
+[0.760s] copying /home/jun/ros2_ws/build/motor_control/build/lib/motor_control/controller2.py -> /home/jun/ros2_ws/install/motor_control/lib/python3.8/site-packages/motor_control
+[0.760s] copying /home/jun/ros2_ws/build/motor_control/build/lib/motor_control/controller1.py -> /home/jun/ros2_ws/install/motor_control/lib/python3.8/site-packages/motor_control
+[0.760s] byte-compiling /home/jun/ros2_ws/install/motor_control/lib/python3.8/site-packages/motor_control/joystick.py to joystick.cpython-38.pyc
+[0.762s] byte-compiling /home/jun/ros2_ws/install/motor_control/lib/python3.8/site-packages/motor_control/controller2.py to controller2.cpython-38.pyc
+[0.763s] byte-compiling /home/jun/ros2_ws/install/motor_control/lib/python3.8/site-packages/motor_control/controller1.py to controller1.cpython-38.pyc
+[0.764s] running install_data
+[0.764s] running install_egg_info
+[0.765s] removing '/home/jun/ros2_ws/install/motor_control/lib/python3.8/site-packages/motor_control-0.0.0-py3.8.egg-info' (and everything under it)
+[0.765s] Copying ../../build/motor_control/motor_control.egg-info to /home/jun/ros2_ws/install/motor_control/lib/python3.8/site-packages/motor_control-0.0.0-py3.8.egg-info
+[0.766s] running install_scripts
+[0.780s] Installing actuator_control script to /home/jun/ros2_ws/install/motor_control/lib/motor_control
+[0.780s] Installing controller1 script to /home/jun/ros2_ws/install/motor_control/lib/motor_control
+[0.780s] Installing controller2 script to /home/jun/ros2_ws/install/motor_control/lib/motor_control
+[0.780s] Installing joystick script to /home/jun/ros2_ws/install/motor_control/lib/motor_control
+[0.781s] Installing monitor_motor script to /home/jun/ros2_ws/install/motor_control/lib/motor_control
+[0.781s] Installing realsense_camera_node script to /home/jun/ros2_ws/install/motor_control/lib/motor_control
+[0.781s] Installing serial_bridge script to /home/jun/ros2_ws/install/motor_control/lib/motor_control
+[0.781s] Installing tankturn script to /home/jun/ros2_ws/install/motor_control/lib/motor_control
+[0.781s] writing list of installed files to '/home/jun/ros2_ws/build/motor_control/install.log'
+[0.797s] Invoked command in '/home/jun/ros2_ws/src/motor_control' returned '0': PYTHONPATH=/home/jun/ros2_ws/build/motor_control/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/jun/ros2_ws/install/motor_control/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py egg_info --egg-base ../../build/motor_control build --build-base /home/jun/ros2_ws/build/motor_control/build install --record /home/jun/ros2_ws/build/motor_control/install.log --install-scripts $base/lib/motor_control --single-version-externally-managed install_data

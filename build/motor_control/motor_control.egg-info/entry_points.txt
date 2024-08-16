@@ -1,0 +1,10 @@
+[console_scripts]
+actuator_control = motor_control.actuator_control:main
+controller1 = motor_control.controller1:main
+controller2 = motor_control.controller2:main
+joystick = motor_control.joystick:main
+monitor_motor = motor_control.monitor_motor:main
+realsense_camera_node = motor_control.realsense_camera_node:main
+serial_bridge = motor_control.serial_bridge:main
+tankturn = motor_control.tankturn:main
+

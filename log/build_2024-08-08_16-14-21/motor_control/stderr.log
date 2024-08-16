@@ -1,0 +1,5 @@
+  File "/home/jun/ros2_ws/install/motor_control/lib/python3.8/site-packages/motor_control/realsense_camera_node.py", line 51
+    cv2.wait
+           ^
+SyntaxError: unexpected EOF while parsing
+

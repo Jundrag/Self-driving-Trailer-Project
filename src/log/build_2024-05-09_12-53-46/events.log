@@ -1,0 +1,77 @@
+[0.000000] (-) TimerEvent: {}
+[0.000321] (motor_control) JobQueued: {'identifier': 'motor_control', 'dependencies': OrderedDict()}
+[0.000556] (rosserial_msgs) JobQueued: {'identifier': 'rosserial_msgs', 'dependencies': OrderedDict()}
+[0.001259] (rosserial_client) JobQueued: {'identifier': 'rosserial_client', 'dependencies': OrderedDict([('rosserial_msgs', '/home/jundrag/ros2_ws/src/install/rosserial_msgs')])}
+[0.001290] (rosserial_python) JobQueued: {'identifier': 'rosserial_python', 'dependencies': OrderedDict([('rosserial_msgs', '/home/jundrag/ros2_ws/src/install/rosserial_msgs')])}
+[0.001318] (rosserial_server) JobQueued: {'identifier': 'rosserial_server', 'dependencies': OrderedDict([('rosserial_msgs', '/home/jundrag/ros2_ws/src/install/rosserial_msgs')])}
+[0.001344] (rosserial) JobQueued: {'identifier': 'rosserial', 'dependencies': OrderedDict([('rosserial_msgs', '/home/jundrag/ros2_ws/src/install/rosserial_msgs'), ('rosserial_client', '/home/jundrag/ros2_ws/src/install/rosserial_client'), ('rosserial_python', '/home/jundrag/ros2_ws/src/install/rosserial_python')])}
+[0.001367] (rosserial_arduino) JobQueued: {'identifier': 'rosserial_arduino', 'dependencies': OrderedDict([('rosserial_msgs', '/home/jundrag/ros2_ws/src/install/rosserial_msgs'), ('rosserial_client', '/home/jundrag/ros2_ws/src/install/rosserial_client'), ('rosserial_python', '/home/jundrag/ros2_ws/src/install/rosserial_python')])}
+[0.001467] (rosserial_chibios) JobQueued: {'identifier': 'rosserial_chibios', 'dependencies': OrderedDict([('rosserial_msgs', '/home/jundrag/ros2_ws/src/install/rosserial_msgs'), ('rosserial_client', '/home/jundrag/ros2_ws/src/install/rosserial_client')])}
+[0.001487] (rosserial_embeddedlinux) JobQueued: {'identifier': 'rosserial_embeddedlinux', 'dependencies': OrderedDict([('rosserial_msgs', '/home/jundrag/ros2_ws/src/install/rosserial_msgs'), ('rosserial_client', '/home/jundrag/ros2_ws/src/install/rosserial_client')])}
+[0.001554] (rosserial_mbed) JobQueued: {'identifier': 'rosserial_mbed', 'dependencies': OrderedDict([('rosserial_msgs', '/home/jundrag/ros2_ws/src/install/rosserial_msgs'), ('rosserial_client', '/home/jundrag/ros2_ws/src/install/rosserial_client')])}
+[0.001574] (rosserial_test) JobQueued: {'identifier': 'rosserial_test', 'dependencies': OrderedDict([('rosserial_msgs', '/home/jundrag/ros2_ws/src/install/rosserial_msgs'), ('rosserial_client', '/home/jundrag/ros2_ws/src/install/rosserial_client'), ('rosserial_python', '/home/jundrag/ros2_ws/src/install/rosserial_python'), ('rosserial_server', '/home/jundrag/ros2_ws/src/install/rosserial_server')])}
+[0.001611] (rosserial_tivac) JobQueued: {'identifier': 'rosserial_tivac', 'dependencies': OrderedDict([('rosserial_msgs', '/home/jundrag/ros2_ws/src/install/rosserial_msgs'), ('rosserial_client', '/home/jundrag/ros2_ws/src/install/rosserial_client')])}
+[0.001631] (rosserial_vex_cortex) JobQueued: {'identifier': 'rosserial_vex_cortex', 'dependencies': OrderedDict([('rosserial_msgs', '/home/jundrag/ros2_ws/src/install/rosserial_msgs'), ('rosserial_client', '/home/jundrag/ros2_ws/src/install/rosserial_client'), ('rosserial_python', '/home/jundrag/ros2_ws/src/install/rosserial_python')])}
+[0.001757] (rosserial_vex_v5) JobQueued: {'identifier': 'rosserial_vex_v5', 'dependencies': OrderedDict([('rosserial_msgs', '/home/jundrag/ros2_ws/src/install/rosserial_msgs'), ('rosserial_client', '/home/jundrag/ros2_ws/src/install/rosserial_client'), ('rosserial_python', '/home/jundrag/ros2_ws/src/install/rosserial_python')])}
+[0.001777] (rosserial_windows) JobQueued: {'identifier': 'rosserial_windows', 'dependencies': OrderedDict([('rosserial_msgs', '/home/jundrag/ros2_ws/src/install/rosserial_msgs'), ('rosserial_client', '/home/jundrag/ros2_ws/src/install/rosserial_client')])}
+[0.001812] (rosserial_xbee) JobQueued: {'identifier': 'rosserial_xbee', 'dependencies': OrderedDict([('rosserial_msgs', '/home/jundrag/ros2_ws/src/install/rosserial_msgs'), ('rosserial_python', '/home/jundrag/ros2_ws/src/install/rosserial_python')])}
+[0.001869] (rosserial_msgs) JobStarted: {'identifier': 'rosserial_msgs'}
+[0.007954] (motor_control) JobStarted: {'identifier': 'motor_control'}
+[0.015435] (rosserial_msgs) JobProgress: {'identifier': 'rosserial_msgs', 'progress': 'cmake'}
+[0.015856] (rosserial_msgs) Command: {'cmd': ['/usr/bin/cmake', '/home/jundrag/ros2_ws/src/rosserial/rosserial_msgs', '-DCATKIN_INSTALL_INTO_PREFIX_ROOT=0', '-DCATKIN_SYMLINK_INSTALL=ON', '-DCMAKE_INSTALL_PREFIX=/home/jundrag/ros2_ws/src/install/rosserial_msgs'], 'cwd': '/home/jundrag/ros2_ws/src/build/rosserial_msgs', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'jundrag'), ('LC_TIME', 'ko_KR.UTF-8'), ('SSH_AGENT_PID', '1627'), ('XDG_SESSION_TYPE', 'x11'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/opt/ros/foxy/opt/yaml_cpp_vendor/lib:/opt/ros/foxy/opt/rviz_ogre_vendor/lib:/opt/ros/foxy/lib/x86_64-linux-gnu:/opt/ros/foxy/lib'), ('HOME', '/home/jundrag'), ('OLDPWD', '/home/jundrag/ros2_ws/src/rosserial'), ('DESKTOP_SESSION', 'ubuntu'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('LC_MONETARY', 'ko_KR.UTF-8'), ('MANAGERPID', '1531'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('IM_CONFIG_PHASE', '1'), ('COLCON_PREFIX_PATH', '/home/jundrag/ros2_ws/install'), ('ROS_DISTRO', 'foxy'), ('LOGNAME', 'jundrag'), ('JOURNAL_STREAM', '8:40653'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'jundrag'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('WINDOWPATH', '2'), ('PATH', '/opt/ros/foxy/bin:/home/jundrag/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin'), ('SESSION_MANAGER', 'local/jun:@/tmp/.ICE-unix/1665,unix/jun:/tmp/.ICE-unix/1665'), ('INVOCATION_ID', '07d16b043cb3459bad31557a7fd948b7'), ('XDG_MENU_PREFIX', 'gnome-'), ('LC_ADDRESS', 'ko_KR.UTF-8'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/abafe850_c138_4d2b_a2df_1300469413c3'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':0'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('LC_TELEPHONE', 'ko_KR.UTF-8'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/gdm/Xauthority'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('GNOME_TERMINAL_SERVICE', ':1.96'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/home/jundrag/ros2_ws/install/my_package:/home/jundrag/ros2_ws/install/motor_control:/opt/ros/foxy'), ('SHELL', '/bin/bash'), ('LC_NAME', 'ko_KR.UTF-8'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('LC_MEASUREMENT', 'ko_KR.UTF-8'), ('GPG_AGENT_INFO', '/run/user/1000/gnupg/S.gpg-agent:0:1'), ('LC_IDENTIFICATION', 'ko_KR.UTF-8'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/jundrag/ros2_ws/src/build/rosserial_msgs'), ('LC_ALL', 'en_US.UTF-8'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/jundrag/ros2_ws/install/my_package/lib/python3.8/site-packages:/home/jundrag/ros2_ws/install/motor_control/lib/python3.8/site-packages:/opt/ros/foxy/lib/python3.8/site-packages'), ('LC_NUMERIC', 'ko_KR.UTF-8'), ('LC_PAPER', 'ko_KR.UTF-8'), ('COLCON', '1'), ('VTE_VERSION', '6003')]), 'shell': False}
+[0.067032] (rosserial_msgs) StdoutLine: {'line': b'-- The C compiler identification is GNU 9.4.0\n'}
+[0.100041] (-) TimerEvent: {}
+[0.114164] (rosserial_msgs) StdoutLine: {'line': b'-- The CXX compiler identification is GNU 9.4.0\n'}
+[0.118035] (rosserial_msgs) StdoutLine: {'line': b'-- Check for working C compiler: /usr/bin/cc\n'}
+[0.178789] (rosserial_msgs) StdoutLine: {'line': b'-- Check for working C compiler: /usr/bin/cc -- works\n'}
+[0.179603] (rosserial_msgs) StdoutLine: {'line': b'-- Detecting C compiler ABI info\n'}
+[0.200159] (-) TimerEvent: {}
+[0.240517] (rosserial_msgs) StdoutLine: {'line': b'-- Detecting C compiler ABI info - done\n'}
+[0.250604] (rosserial_msgs) StdoutLine: {'line': b'-- Detecting C compile features\n'}
+[0.250896] (rosserial_msgs) StdoutLine: {'line': b'-- Detecting C compile features - done\n'}
+[0.253054] (rosserial_msgs) StdoutLine: {'line': b'-- Check for working CXX compiler: /usr/bin/c++\n'}
+[0.300269] (-) TimerEvent: {}
+[0.322550] (rosserial_msgs) StdoutLine: {'line': b'-- Check for working CXX compiler: /usr/bin/c++ -- works\n'}
+[0.323443] (rosserial_msgs) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info\n'}
+[0.392849] (rosserial_msgs) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info - done\n'}
+[0.400382] (-) TimerEvent: {}
+[0.403213] (rosserial_msgs) StdoutLine: {'line': b'-- Detecting CXX compile features\n'}
+[0.403654] (rosserial_msgs) StdoutLine: {'line': b'-- Detecting CXX compile features - done\n'}
+[0.413026] (rosserial_msgs) StderrLine: {'line': b'CMake Error at CMakeLists.txt:4 (find_package):\n'}
+[0.413148] (rosserial_msgs) StderrLine: {'line': b'  By not providing "Findcatkin.cmake" in CMAKE_MODULE_PATH this project has\n'}
+[0.413214] (rosserial_msgs) StderrLine: {'line': b'  asked CMake to find a package configuration file provided by "catkin", but\n'}
+[0.413302] (rosserial_msgs) StderrLine: {'line': b'  CMake did not find one.\n'}
+[0.413361] (rosserial_msgs) StderrLine: {'line': b'\n'}
+[0.413488] (rosserial_msgs) StderrLine: {'line': b'  Could not find a package configuration file provided by "catkin" with any\n'}
+[0.413571] (rosserial_msgs) StderrLine: {'line': b'  of the following names:\n'}
+[0.413632] (rosserial_msgs) StderrLine: {'line': b'\n'}
+[0.413689] (rosserial_msgs) StderrLine: {'line': b'    catkinConfig.cmake\n'}
+[0.413744] (rosserial_msgs) StderrLine: {'line': b'    catkin-config.cmake\n'}
+[0.413797] (rosserial_msgs) StderrLine: {'line': b'\n'}
+[0.413851] (rosserial_msgs) StderrLine: {'line': b'  Add the installation prefix of "catkin" to CMAKE_PREFIX_PATH or set\n'}
+[0.413906] (rosserial_msgs) StderrLine: {'line': b'  "catkin_DIR" to a directory containing one of the above files.  If "catkin"\n'}
+[0.413960] (rosserial_msgs) StderrLine: {'line': b'  provides a separate development package or SDK, be sure it has been\n'}
+[0.414014] (rosserial_msgs) StderrLine: {'line': b'  installed.\n'}
+[0.414067] (rosserial_msgs) StderrLine: {'line': b'\n'}
+[0.414121] (rosserial_msgs) StderrLine: {'line': b'\n'}
+[0.414175] (rosserial_msgs) StdoutLine: {'line': b'-- Configuring incomplete, errors occurred!\n'}
+[0.414233] (rosserial_msgs) StdoutLine: {'line': b'See also "/home/jundrag/ros2_ws/src/build/rosserial_msgs/CMakeFiles/CMakeOutput.log".\n'}
+[0.416243] (rosserial_msgs) CommandEnded: {'returncode': 1}
+[0.435220] (rosserial_msgs) JobEnded: {'identifier': 'rosserial_msgs', 'rc': 1}
+[0.500476] (-) TimerEvent: {}
+[0.539859] (motor_control) JobEnded: {'identifier': 'motor_control', 'rc': 'SIGINT'}
+[0.550373] (rosserial_client) JobSkipped: {'identifier': 'rosserial_client'}
+[0.550407] (rosserial_python) JobSkipped: {'identifier': 'rosserial_python'}
+[0.550426] (rosserial_server) JobSkipped: {'identifier': 'rosserial_server'}
+[0.550441] (rosserial) JobSkipped: {'identifier': 'rosserial'}
+[0.550456] (rosserial_arduino) JobSkipped: {'identifier': 'rosserial_arduino'}
+[0.550471] (rosserial_chibios) JobSkipped: {'identifier': 'rosserial_chibios'}
+[0.550484] (rosserial_embeddedlinux) JobSkipped: {'identifier': 'rosserial_embeddedlinux'}
+[0.550499] (rosserial_mbed) JobSkipped: {'identifier': 'rosserial_mbed'}
+[0.550513] (rosserial_test) JobSkipped: {'identifier': 'rosserial_test'}
+[0.550526] (rosserial_tivac) JobSkipped: {'identifier': 'rosserial_tivac'}
+[0.550539] (rosserial_vex_cortex) JobSkipped: {'identifier': 'rosserial_vex_cortex'}
+[0.550553] (rosserial_vex_v5) JobSkipped: {'identifier': 'rosserial_vex_v5'}
+[0.550566] (rosserial_windows) JobSkipped: {'identifier': 'rosserial_windows'}
+[0.550579] (rosserial_xbee) JobSkipped: {'identifier': 'rosserial_xbee'}
+[0.550593] (-) EventReactorShutdown: {}

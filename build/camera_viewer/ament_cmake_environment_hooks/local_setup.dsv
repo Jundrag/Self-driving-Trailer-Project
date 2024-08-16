@@ -1,0 +1,3 @@
+source;share/camera_viewer/environment/ament_prefix_path.sh
+source;share/camera_viewer/environment/path.sh
+source;share/camera_viewer/environment/pythonpath.sh

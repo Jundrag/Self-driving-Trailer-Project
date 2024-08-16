@@ -1,0 +1,6 @@
+Invoking command in '/home/jun/ros2_ws/build/camera_viewer': /usr/bin/cmake /home/jun/ros2_ws/src/camera_viewer -DCATKIN_INSTALL_INTO_PREFIX_ROOT=0 -DCMAKE_INSTALL_PREFIX=/home/jun/ros2_ws/install/camera_viewer
+Invoked command in '/home/jun/ros2_ws/build/camera_viewer' returned '0': /usr/bin/cmake /home/jun/ros2_ws/src/camera_viewer -DCATKIN_INSTALL_INTO_PREFIX_ROOT=0 -DCMAKE_INSTALL_PREFIX=/home/jun/ros2_ws/install/camera_viewer
+Invoking command in '/home/jun/ros2_ws/build/camera_viewer': /usr/bin/cmake --build /home/jun/ros2_ws/build/camera_viewer -- -j6 -l6
+Invoked command in '/home/jun/ros2_ws/build/camera_viewer' returned '0': /usr/bin/cmake --build /home/jun/ros2_ws/build/camera_viewer -- -j6 -l6
+Invoking command in '/home/jun/ros2_ws/build/camera_viewer': /usr/bin/cmake --install /home/jun/ros2_ws/build/camera_viewer
+Invoked command in '/home/jun/ros2_ws/build/camera_viewer' returned '0': /usr/bin/cmake --install /home/jun/ros2_ws/build/camera_viewer

@@ -1,0 +1,163 @@
+[0.014s] Invoking command in '/home/jun/ros2_ws/build/realsense2_camera': CMAKE_PREFIX_PATH=/home/jun/ros2_ws/install/realsense2_camera_msgs:/home/jun/ros2_ws/install/motor_control:/opt/ros/foxy:/home/jun/ros2_ws/install/camera_viewer:/home/jun/ros2_ws/install/realsense2_description:/home/jun/ros2_ws/install/realsense2_camera LD_LIBRARY_PATH=/home/jun/ros2_ws/install/realsense2_camera_msgs/lib:/home/jun/ros2_ws/install/realsense2_camera/lib:/opt/ros/foxy/opt/yaml_cpp_vendor/lib:/opt/ros/foxy/opt/rviz_ogre_vendor/lib:/opt/ros/foxy/lib/x86_64-linux-gnu:/opt/ros/foxy/lib PYTHONPATH=/home/jun/ros2_ws/install/realsense2_camera_msgs/lib/python3.8/site-packages:/home/jun/ros2_ws/install/camera_viewer/lib/python3.8/site-packages:/home/jun/ros2_ws/install/motor_control/lib/python3.8/site-packages:/opt/ros/foxy/lib/python3.8/site-packages /usr/bin/cmake /home/jun/ros2_ws/src/realsense-ros/realsense2_camera -DCMAKE_INSTALL_PREFIX=/home/jun/ros2_ws/install/realsense2_camera
+[0.066s] -- The C compiler identification is GNU 9.4.0
+[0.116s] -- The CXX compiler identification is GNU 9.4.0
+[0.120s] -- Check for working C compiler: /usr/bin/cc
+[0.181s] -- Check for working C compiler: /usr/bin/cc -- works
+[0.182s] -- Detecting C compiler ABI info
+[0.244s] -- Detecting C compiler ABI info - done
+[0.254s] -- Detecting C compile features
+[0.254s] -- Detecting C compile features - done
+[0.256s] -- Check for working CXX compiler: /usr/bin/c++
+[0.327s] -- Check for working CXX compiler: /usr/bin/c++ -- works
+[0.328s] -- Detecting CXX compiler ABI info
+[0.399s] -- Detecting CXX compiler ABI info - done
+[0.410s] -- Detecting CXX compile features
+[0.410s] -- Detecting CXX compile features - done
+[0.411s] -- Create Release Build.
+[0.412s] -- Found ament_cmake: 0.9.12 (/opt/ros/foxy/share/ament_cmake/cmake)
+[0.434s] -- Found PythonInterp: /usr/bin/python3 (found suitable version "3.8.10", minimum required is "3") 
+[0.434s] -- Using PYTHON_EXECUTABLE: /usr/bin/python3
+[0.614s] -- Found builtin_interfaces: 1.0.0 (/opt/ros/foxy/share/builtin_interfaces/cmake)
+[0.638s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[0.644s] -- Found rosidl_adapter: 1.3.1 (/opt/ros/foxy/share/rosidl_adapter/cmake)
+[0.718s] -- Found OpenSSL: /usr/lib/x86_64-linux-gnu/libcrypto.so (found version "1.1.1f")  
+[0.744s] -- Found FastRTPS: /opt/ros/foxy/include  
+[0.815s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[0.841s] -- Found cv_bridge: 3.0.7 (/opt/ros/foxy/share/cv_bridge/cmake)
+[0.999s] -- Found image_transport: 2.4.0 (/opt/ros/foxy/share/image_transport/cmake)
+[1.045s] -- Found rmw_implementation_cmake: 1.0.4 (/opt/ros/foxy/share/rmw_implementation_cmake/cmake)
+[1.046s] -- Using RMW implementation 'rmw_fastrtps_cpp' as default
+[1.047s] -- Looking for pthread.h
+[1.116s] -- Looking for pthread.h - found
+[1.116s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD
+[1.198s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Failed
+[1.198s] -- Looking for pthread_create in pthreads
+[1.250s] -- Looking for pthread_create in pthreads - not found
+[1.250s] -- Looking for pthread_create in pthread
+[1.317s] -- Looking for pthread_create in pthread - found
+[1.318s] -- Found Threads: TRUE  
+[1.493s] -- Found rclcpp_components: 2.4.3 (/opt/ros/foxy/share/rclcpp_components/cmake)
+[1.539s] -- Found realsense2_camera_msgs: 4.55.1 (/home/jun/ros2_ws/install/realsense2_camera_msgs/share/realsense2_camera_msgs/cmake)
+[1.649s] -- Found nav_msgs: 2.0.5 (/opt/ros/foxy/share/nav_msgs/cmake)
+[1.715s] -- Found tf2_ros: 0.13.14 (/opt/ros/foxy/share/tf2_ros/cmake)
+[1.973s] -- Found diagnostic_updater: 3.1.2 (/opt/ros/foxy/share/diagnostic_updater/cmake)
+[2.030s] -- Found OpenCV: /usr (found version "4.2.0") found components: core 
+[2.032s] -- Build for ROS2 Foxy
+[2.061s] -- Found ament_cmake_gtest: 0.9.12 (/opt/ros/foxy/share/ament_cmake_gtest/cmake)
+[2.063s] -- Found gtest sources under '/opt/ros/foxy/src/gtest_vendor': C++ tests using 'Google Test' will be built
+[2.065s] -- Check if compiler accepts -pthread
+[2.131s] -- Check if compiler accepts -pthread - yes
+[2.134s] -- Found ament_cmake_pytest: 0.9.12 (/opt/ros/foxy/share/ament_cmake_pytest/cmake)
+[8.069s] -- rs_device_info:
+[8.069s] -- Device Name                   Serial Number       Firmware Version
+[8.069s] Intel RealSense USB2          ffffffffffff        5.16.0.1
+[8.069s] 
+[8.133s] -- Configuring done
+[8.182s] -- Generating done
+[8.185s] -- Build files have been written to: /home/jun/ros2_ws/build/realsense2_camera
+[8.196s] Invoked command in '/home/jun/ros2_ws/build/realsense2_camera' returned '0': CMAKE_PREFIX_PATH=/home/jun/ros2_ws/install/realsense2_camera_msgs:/home/jun/ros2_ws/install/motor_control:/opt/ros/foxy:/home/jun/ros2_ws/install/camera_viewer:/home/jun/ros2_ws/install/realsense2_description:/home/jun/ros2_ws/install/realsense2_camera LD_LIBRARY_PATH=/home/jun/ros2_ws/install/realsense2_camera_msgs/lib:/home/jun/ros2_ws/install/realsense2_camera/lib:/opt/ros/foxy/opt/yaml_cpp_vendor/lib:/opt/ros/foxy/opt/rviz_ogre_vendor/lib:/opt/ros/foxy/lib/x86_64-linux-gnu:/opt/ros/foxy/lib PYTHONPATH=/home/jun/ros2_ws/install/realsense2_camera_msgs/lib/python3.8/site-packages:/home/jun/ros2_ws/install/camera_viewer/lib/python3.8/site-packages:/home/jun/ros2_ws/install/motor_control/lib/python3.8/site-packages:/opt/ros/foxy/lib/python3.8/site-packages /usr/bin/cmake /home/jun/ros2_ws/src/realsense-ros/realsense2_camera -DCMAKE_INSTALL_PREFIX=/home/jun/ros2_ws/install/realsense2_camera
+[8.197s] Invoking command in '/home/jun/ros2_ws/build/realsense2_camera': CMAKE_PREFIX_PATH=/home/jun/ros2_ws/install/realsense2_camera_msgs:/home/jun/ros2_ws/install/motor_control:/opt/ros/foxy:/home/jun/ros2_ws/install/camera_viewer:/home/jun/ros2_ws/install/realsense2_description:/home/jun/ros2_ws/install/realsense2_camera LD_LIBRARY_PATH=/home/jun/ros2_ws/install/realsense2_camera_msgs/lib:/home/jun/ros2_ws/install/realsense2_camera/lib:/opt/ros/foxy/opt/yaml_cpp_vendor/lib:/opt/ros/foxy/opt/rviz_ogre_vendor/lib:/opt/ros/foxy/lib/x86_64-linux-gnu:/opt/ros/foxy/lib PYTHONPATH=/home/jun/ros2_ws/install/realsense2_camera_msgs/lib/python3.8/site-packages:/home/jun/ros2_ws/install/camera_viewer/lib/python3.8/site-packages:/home/jun/ros2_ws/install/motor_control/lib/python3.8/site-packages:/opt/ros/foxy/lib/python3.8/site-packages /usr/bin/cmake --build /home/jun/ros2_ws/build/realsense2_camera -- -j6 -l6
+[8.235s] [35m[1mScanning dependencies of target gtest_main[0m
+[8.235s] [35m[1mScanning dependencies of target gtest[0m
+[8.235s] [35m[1mScanning dependencies of target realsense2_camera_node[0m
+[8.235s] [35m[1mScanning dependencies of target realsense2_camera[0m
+[8.248s] [  4%] [32mBuilding CXX object gtest/CMakeFiles/gtest_main.dir/src/gtest_main.cc.o[0m
+[8.251s] [  9%] [32mBuilding CXX object gtest/CMakeFiles/gtest.dir/src/gtest-all.cc.o[0m
+[8.270s] [ 13%] [32mBuilding CXX object CMakeFiles/realsense2_camera_node.dir/rclcpp_components/node_main_realsense2_camera_node.cpp.o[0m
+[8.359s] [ 22%] [32mBuilding CXX object CMakeFiles/realsense2_camera.dir/src/base_realsense_node.cpp.o[0m
+[8.359s] [ 22%] [32mBuilding CXX object CMakeFiles/realsense2_camera.dir/src/realsense_node_factory.cpp.o[0m
+[8.368s] [ 27%] [32mBuilding CXX object CMakeFiles/realsense2_camera.dir/src/parameters.cpp.o[0m
+[8.949s] [ 31%] [32m[1mLinking CXX static library libgtest_main.a[0m
+[8.984s] [ 31%] Built target gtest_main
+[8.994s] [ 36%] [32mBuilding CXX object CMakeFiles/realsense2_camera.dir/src/rs_node_setup.cpp.o[0m
+[10.465s] [ 40%] [32m[1mLinking CXX executable realsense2_camera_node[0m
+[10.587s] [ 40%] Built target realsense2_camera_node
+[10.597s] [ 45%] [32mBuilding CXX object CMakeFiles/realsense2_camera.dir/src/ros_sensor.cpp.o[0m
+[13.915s] [ 50%] [32mBuilding CXX object CMakeFiles/realsense2_camera.dir/src/ros_utils.cpp.o[0m
+[15.349s] [ 54%] [32m[1mLinking CXX static library libgtest.a[0m
+[15.385s] [ 54%] Built target gtest
+[15.396s] [35m[1mScanning dependencies of target gtest_template[0m
+[15.411s] [ 59%] [32mBuilding CXX object CMakeFiles/gtest_template.dir/test/gtest_template.cpp.o[0m
+[15.839s] [ 63%] [32mBuilding CXX object CMakeFiles/realsense2_camera.dir/src/dynamic_params.cpp.o[0m
+[16.212s] [ 68%] [32m[1mLinking CXX executable gtest_template[0m
+[16.315s] [ 68%] Built target gtest_template
+[16.324s] [ 72%] [32mBuilding CXX object CMakeFiles/realsense2_camera.dir/src/sensor_params.cpp.o[0m
+[16.508s] [ 77%] [32mBuilding CXX object CMakeFiles/realsense2_camera.dir/src/named_filter.cpp.o[0m
+[17.463s] [ 81%] [32mBuilding CXX object CMakeFiles/realsense2_camera.dir/src/profile_manager.cpp.o[0m
+[19.774s] [ 86%] [32mBuilding CXX object CMakeFiles/realsense2_camera.dir/src/image_publisher.cpp.o[0m
+[20.215s] [ 90%] [32mBuilding CXX object CMakeFiles/realsense2_camera.dir/src/tfs.cpp.o[0m
+[20.331s] [ 95%] [32mBuilding CXX object CMakeFiles/realsense2_camera.dir/src/ros_param_backend.cpp.o[0m
+[26.292s] [100%] [32m[1mLinking CXX shared library librealsense2_camera.so[0m
+[26.766s] [100%] Built target realsense2_camera
+[26.776s] Invoked command in '/home/jun/ros2_ws/build/realsense2_camera' returned '0': CMAKE_PREFIX_PATH=/home/jun/ros2_ws/install/realsense2_camera_msgs:/home/jun/ros2_ws/install/motor_control:/opt/ros/foxy:/home/jun/ros2_ws/install/camera_viewer:/home/jun/ros2_ws/install/realsense2_description:/home/jun/ros2_ws/install/realsense2_camera LD_LIBRARY_PATH=/home/jun/ros2_ws/install/realsense2_camera_msgs/lib:/home/jun/ros2_ws/install/realsense2_camera/lib:/opt/ros/foxy/opt/yaml_cpp_vendor/lib:/opt/ros/foxy/opt/rviz_ogre_vendor/lib:/opt/ros/foxy/lib/x86_64-linux-gnu:/opt/ros/foxy/lib PYTHONPATH=/home/jun/ros2_ws/install/realsense2_camera_msgs/lib/python3.8/site-packages:/home/jun/ros2_ws/install/camera_viewer/lib/python3.8/site-packages:/home/jun/ros2_ws/install/motor_control/lib/python3.8/site-packages:/opt/ros/foxy/lib/python3.8/site-packages /usr/bin/cmake --build /home/jun/ros2_ws/build/realsense2_camera -- -j6 -l6
+[26.824s] Invoking command in '/home/jun/ros2_ws/build/realsense2_camera': CMAKE_PREFIX_PATH=/home/jun/ros2_ws/install/realsense2_camera_msgs:/home/jun/ros2_ws/install/motor_control:/opt/ros/foxy:/home/jun/ros2_ws/install/camera_viewer:/home/jun/ros2_ws/install/realsense2_description:/home/jun/ros2_ws/install/realsense2_camera LD_LIBRARY_PATH=/home/jun/ros2_ws/install/realsense2_camera_msgs/lib:/home/jun/ros2_ws/install/realsense2_camera/lib:/opt/ros/foxy/opt/yaml_cpp_vendor/lib:/opt/ros/foxy/opt/rviz_ogre_vendor/lib:/opt/ros/foxy/lib/x86_64-linux-gnu:/opt/ros/foxy/lib PYTHONPATH=/home/jun/ros2_ws/install/realsense2_camera_msgs/lib/python3.8/site-packages:/home/jun/ros2_ws/install/camera_viewer/lib/python3.8/site-packages:/home/jun/ros2_ws/install/motor_control/lib/python3.8/site-packages:/opt/ros/foxy/lib/python3.8/site-packages /usr/bin/cmake --install /home/jun/ros2_ws/build/realsense2_camera
+[26.833s] -- Install configuration: "Release"
+[26.833s] -- Installing: /home/jun/ros2_ws/install/realsense2_camera/lib/realsense2_camera/realsense2_camera_node
+[26.833s] -- Set runtime path of "/home/jun/ros2_ws/install/realsense2_camera/lib/realsense2_camera/realsense2_camera_node" to ""
+[26.834s] -- Installing: /home/jun/ros2_ws/install/realsense2_camera/lib/librealsense2_camera.so
+[26.836s] -- Set runtime path of "/home/jun/ros2_ws/install/realsense2_camera/lib/librealsense2_camera.so" to ""
+[26.837s] -- Installing: /home/jun/ros2_ws/install/realsense2_camera/include
+[26.837s] -- Installing: /home/jun/ros2_ws/install/realsense2_camera/include/ros_utils.h
+[26.837s] -- Installing: /home/jun/ros2_ws/install/realsense2_camera/include/constants.h
+[26.837s] -- Installing: /home/jun/ros2_ws/install/realsense2_camera/include/profile_manager.h
+[26.837s] -- Installing: /home/jun/ros2_ws/install/realsense2_camera/include/dynamic_params.h
+[26.837s] -- Installing: /home/jun/ros2_ws/install/realsense2_camera/include/ros_param_backend.h
+[26.837s] -- Installing: /home/jun/ros2_ws/install/realsense2_camera/include/image_publisher.h
+[26.837s] -- Installing: /home/jun/ros2_ws/install/realsense2_camera/include/base_realsense_node.h
+[26.837s] -- Installing: /home/jun/ros2_ws/install/realsense2_camera/include/gl_window.h
+[26.837s] -- Installing: /home/jun/ros2_ws/install/realsense2_camera/include/ros_sensor.h
+[26.837s] -- Installing: /home/jun/ros2_ws/install/realsense2_camera/include/sensor_params.h
+[26.837s] -- Installing: /home/jun/ros2_ws/install/realsense2_camera/include/realsense_node_factory.h
+[26.838s] -- Installing: /home/jun/ros2_ws/install/realsense2_camera/include/named_filter.h
+[26.838s] -- Installing: /home/jun/ros2_ws/install/realsense2_camera/share/realsense2_camera/launch
+[26.838s] -- Installing: /home/jun/ros2_ws/install/realsense2_camera/share/realsense2_camera/launch/rs_multi_camera_launch.py
+[26.838s] -- Installing: /home/jun/ros2_ws/install/realsense2_camera/share/realsense2_camera/launch/default.rviz
+[26.838s] -- Installing: /home/jun/ros2_ws/install/realsense2_camera/share/realsense2_camera/launch/rs_intra_process_demo_launch.py
+[26.838s] -- Installing: /home/jun/ros2_ws/install/realsense2_camera/share/realsense2_camera/launch/rs_launch.py
+[26.838s] -- Installing: /home/jun/ros2_ws/install/realsense2_camera/share/realsense2_camera/examples
+[26.838s] -- Installing: /home/jun/ros2_ws/install/realsense2_camera/share/realsense2_camera/examples/launch_from_rosbag
+[26.838s] -- Installing: /home/jun/ros2_ws/install/realsense2_camera/share/realsense2_camera/examples/launch_from_rosbag/README.md
+[26.838s] -- Installing: /home/jun/ros2_ws/install/realsense2_camera/share/realsense2_camera/examples/launch_from_rosbag/rs_launch_from_rosbag.py
+[26.838s] -- Installing: /home/jun/ros2_ws/install/realsense2_camera/share/realsense2_camera/examples/pointcloud
+[26.838s] -- Installing: /home/jun/ros2_ws/install/realsense2_camera/share/realsense2_camera/examples/pointcloud/README.md
+[26.838s] -- Installing: /home/jun/ros2_ws/install/realsense2_camera/share/realsense2_camera/examples/pointcloud/rs_d405_pointcloud_launch.py
+[26.838s] -- Installing: /home/jun/ros2_ws/install/realsense2_camera/share/realsense2_camera/examples/pointcloud/rviz
+[26.839s] -- Installing: /home/jun/ros2_ws/install/realsense2_camera/share/realsense2_camera/examples/pointcloud/rviz/urdf_pointcloud.rviz
+[26.839s] -- Installing: /home/jun/ros2_ws/install/realsense2_camera/share/realsense2_camera/examples/pointcloud/rviz/pointcloud.rviz
+[26.839s] -- Installing: /home/jun/ros2_ws/install/realsense2_camera/share/realsense2_camera/examples/pointcloud/rs_pointcloud_launch.py
+[26.839s] -- Installing: /home/jun/ros2_ws/install/realsense2_camera/share/realsense2_camera/examples/pointcloud/rs_d455_pointcloud_launch.py
+[26.839s] -- Installing: /home/jun/ros2_ws/install/realsense2_camera/share/realsense2_camera/examples/align_depth
+[26.839s] -- Installing: /home/jun/ros2_ws/install/realsense2_camera/share/realsense2_camera/examples/align_depth/README.md
+[26.839s] -- Installing: /home/jun/ros2_ws/install/realsense2_camera/share/realsense2_camera/examples/align_depth/rs_align_depth_launch.py
+[26.839s] -- Installing: /home/jun/ros2_ws/install/realsense2_camera/share/realsense2_camera/examples/launch_params_from_file
+[26.839s] -- Installing: /home/jun/ros2_ws/install/realsense2_camera/share/realsense2_camera/examples/launch_params_from_file/README.md
+[26.839s] -- Installing: /home/jun/ros2_ws/install/realsense2_camera/share/realsense2_camera/examples/launch_params_from_file/rs_launch_get_params_from_yaml.py
+[26.839s] -- Installing: /home/jun/ros2_ws/install/realsense2_camera/share/realsense2_camera/examples/launch_params_from_file/config
+[26.839s] -- Installing: /home/jun/ros2_ws/install/realsense2_camera/share/realsense2_camera/examples/launch_params_from_file/config/config.yaml
+[26.839s] -- Installing: /home/jun/ros2_ws/install/realsense2_camera/share/realsense2_camera/examples/dual_camera
+[26.839s] -- Installing: /home/jun/ros2_ws/install/realsense2_camera/share/realsense2_camera/examples/dual_camera/README.md
+[26.840s] -- Installing: /home/jun/ros2_ws/install/realsense2_camera/share/realsense2_camera/examples/dual_camera/rs_dual_camera_launch.py
+[26.840s] -- Installing: /home/jun/ros2_ws/install/realsense2_camera/share/realsense2_camera/examples/dual_camera/rviz
+[26.840s] -- Installing: /home/jun/ros2_ws/install/realsense2_camera/share/realsense2_camera/examples/dual_camera/rviz/dual_camera_pointcloud.rviz
+[26.840s] -- Installing: /home/jun/ros2_ws/install/realsense2_camera/share/realsense2_camera/environment/library_path.sh
+[26.840s] -- Installing: /home/jun/ros2_ws/install/realsense2_camera/share/realsense2_camera/environment/library_path.dsv
+[26.840s] -- Installing: /home/jun/ros2_ws/install/realsense2_camera/share/ament_index/resource_index/package_run_dependencies/realsense2_camera
+[26.840s] -- Installing: /home/jun/ros2_ws/install/realsense2_camera/share/ament_index/resource_index/parent_prefix_path/realsense2_camera
+[26.840s] -- Installing: /home/jun/ros2_ws/install/realsense2_camera/share/realsense2_camera/environment/ament_prefix_path.sh
+[26.841s] -- Installing: /home/jun/ros2_ws/install/realsense2_camera/share/realsense2_camera/environment/ament_prefix_path.dsv
+[26.841s] -- Installing: /home/jun/ros2_ws/install/realsense2_camera/share/realsense2_camera/environment/path.sh
+[26.841s] -- Installing: /home/jun/ros2_ws/install/realsense2_camera/share/realsense2_camera/environment/path.dsv
+[26.841s] -- Installing: /home/jun/ros2_ws/install/realsense2_camera/share/realsense2_camera/local_setup.bash
+[26.841s] -- Installing: /home/jun/ros2_ws/install/realsense2_camera/share/realsense2_camera/local_setup.sh
+[26.841s] -- Installing: /home/jun/ros2_ws/install/realsense2_camera/share/realsense2_camera/local_setup.zsh
+[26.841s] -- Installing: /home/jun/ros2_ws/install/realsense2_camera/share/realsense2_camera/local_setup.dsv
+[26.841s] -- Installing: /home/jun/ros2_ws/install/realsense2_camera/share/realsense2_camera/package.dsv
+[26.842s] -- Installing: /home/jun/ros2_ws/install/realsense2_camera/share/ament_index/resource_index/packages/realsense2_camera
+[26.842s] -- Installing: /home/jun/ros2_ws/install/realsense2_camera/share/ament_index/resource_index/rclcpp_components/realsense2_camera
+[26.842s] -- Installing: /home/jun/ros2_ws/install/realsense2_camera/share/realsense2_camera/cmake/ament_cmake_export_include_directories-extras.cmake
+[26.842s] -- Installing: /home/jun/ros2_ws/install/realsense2_camera/share/realsense2_camera/cmake/ament_cmake_export_libraries-extras.cmake
+[26.842s] -- Installing: /home/jun/ros2_ws/install/realsense2_camera/share/realsense2_camera/cmake/ament_cmake_export_dependencies-extras.cmake
+[26.842s] -- Installing: /home/jun/ros2_ws/install/realsense2_camera/share/realsense2_camera/cmake/realsense2_cameraConfig.cmake
+[26.842s] -- Installing: /home/jun/ros2_ws/install/realsense2_camera/share/realsense2_camera/cmake/realsense2_cameraConfig-version.cmake
+[26.842s] -- Installing: /home/jun/ros2_ws/install/realsense2_camera/share/realsense2_camera/package.xml
+[26.845s] Invoked command in '/home/jun/ros2_ws/build/realsense2_camera' returned '0': CMAKE_PREFIX_PATH=/home/jun/ros2_ws/install/realsense2_camera_msgs:/home/jun/ros2_ws/install/motor_control:/opt/ros/foxy:/home/jun/ros2_ws/install/camera_viewer:/home/jun/ros2_ws/install/realsense2_description:/home/jun/ros2_ws/install/realsense2_camera LD_LIBRARY_PATH=/home/jun/ros2_ws/install/realsense2_camera_msgs/lib:/home/jun/ros2_ws/install/realsense2_camera/lib:/opt/ros/foxy/opt/yaml_cpp_vendor/lib:/opt/ros/foxy/opt/rviz_ogre_vendor/lib:/opt/ros/foxy/lib/x86_64-linux-gnu:/opt/ros/foxy/lib PYTHONPATH=/home/jun/ros2_ws/install/realsense2_camera_msgs/lib/python3.8/site-packages:/home/jun/ros2_ws/install/camera_viewer/lib/python3.8/site-packages:/home/jun/ros2_ws/install/motor_control/lib/python3.8/site-packages:/opt/ros/foxy/lib/python3.8/site-packages /usr/bin/cmake --install /home/jun/ros2_ws/build/realsense2_camera

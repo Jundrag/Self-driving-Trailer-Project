@@ -1,0 +1,33 @@
+[0.545s] Invoking command in '/home/jun/ros2_ws/src/motor_control': PYTHONPATH=/home/jun/ros2_ws/build/motor_control/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/jun/ros2_ws/install/motor_control/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py egg_info --egg-base ../../build/motor_control build --build-base /home/jun/ros2_ws/build/motor_control/build install --record /home/jun/ros2_ws/build/motor_control/install.log --install-scripts $base/lib/motor_control --single-version-externally-managed install_data
+[0.736s] running egg_info
+[0.737s] writing ../../build/motor_control/motor_control.egg-info/PKG-INFO
+[0.737s] writing dependency_links to ../../build/motor_control/motor_control.egg-info/dependency_links.txt
+[0.737s] writing entry points to ../../build/motor_control/motor_control.egg-info/entry_points.txt
+[0.737s] writing requirements to ../../build/motor_control/motor_control.egg-info/requires.txt
+[0.737s] writing top-level names to ../../build/motor_control/motor_control.egg-info/top_level.txt
+[0.766s] reading manifest file '../../build/motor_control/motor_control.egg-info/SOURCES.txt'
+[0.767s] writing manifest file '../../build/motor_control/motor_control.egg-info/SOURCES.txt'
+[0.767s] running build
+[0.767s] running build_py
+[0.767s] copying motor_control/actuator_control.py -> /home/jun/ros2_ws/build/motor_control/build/lib/motor_control
+[0.768s] running install
+[0.769s] running install_lib
+[0.770s] copying /home/jun/ros2_ws/build/motor_control/build/lib/motor_control/actuator_control.py -> /home/jun/ros2_ws/install/motor_control/lib/python3.8/site-packages/motor_control
+[0.770s] byte-compiling /home/jun/ros2_ws/install/motor_control/lib/python3.8/site-packages/motor_control/actuator_control.py to actuator_control.cpython-38.pyc
+[0.772s] running install_data
+[0.772s] running install_egg_info
+[0.773s] removing '/home/jun/ros2_ws/install/motor_control/lib/python3.8/site-packages/motor_control-0.0.0-py3.8.egg-info' (and everything under it)
+[0.773s] Copying ../../build/motor_control/motor_control.egg-info to /home/jun/ros2_ws/install/motor_control/lib/python3.8/site-packages/motor_control-0.0.0-py3.8.egg-info
+[0.774s] running install_scripts
+[0.788s] Installing actuator_control script to /home/jun/ros2_ws/install/motor_control/lib/motor_control
+[0.788s] Installing angle_controller1 script to /home/jun/ros2_ws/install/motor_control/lib/motor_control
+[0.788s] Installing angle_controller2 script to /home/jun/ros2_ws/install/motor_control/lib/motor_control
+[0.789s] Installing controller1 script to /home/jun/ros2_ws/install/motor_control/lib/motor_control
+[0.789s] Installing controller2 script to /home/jun/ros2_ws/install/motor_control/lib/motor_control
+[0.789s] Installing joystick script to /home/jun/ros2_ws/install/motor_control/lib/motor_control
+[0.789s] Installing monitor_motor script to /home/jun/ros2_ws/install/motor_control/lib/motor_control
+[0.789s] Installing realsense_camera_node script to /home/jun/ros2_ws/install/motor_control/lib/motor_control
+[0.789s] Installing serial_bridge script to /home/jun/ros2_ws/install/motor_control/lib/motor_control
+[0.789s] Installing tankturn script to /home/jun/ros2_ws/install/motor_control/lib/motor_control
+[0.790s] writing list of installed files to '/home/jun/ros2_ws/build/motor_control/install.log'
+[0.806s] Invoked command in '/home/jun/ros2_ws/src/motor_control' returned '0': PYTHONPATH=/home/jun/ros2_ws/build/motor_control/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/jun/ros2_ws/install/motor_control/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py egg_info --egg-base ../../build/motor_control build --build-base /home/jun/ros2_ws/build/motor_control/build install --record /home/jun/ros2_ws/build/motor_control/install.log --install-scripts $base/lib/motor_control --single-version-externally-managed install_data

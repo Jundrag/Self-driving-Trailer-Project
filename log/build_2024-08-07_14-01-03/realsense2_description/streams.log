@@ -1,0 +1,74 @@
+[0.013s] Invoking command in '/home/jun/ros2_ws/build/realsense2_description': CMAKE_PREFIX_PATH=/home/jun/ros2_ws/install/realsense2_camera_msgs:/home/jun/ros2_ws/install/motor_control:/opt/ros/foxy:/home/jun/ros2_ws/install/camera_viewer:/home/jun/ros2_ws/install/realsense2_description:/home/jun/ros2_ws/install/realsense2_camera LD_LIBRARY_PATH=/home/jun/ros2_ws/install/realsense2_camera_msgs/lib:/home/jun/ros2_ws/install/realsense2_camera/lib:/opt/ros/foxy/opt/yaml_cpp_vendor/lib:/opt/ros/foxy/opt/rviz_ogre_vendor/lib:/opt/ros/foxy/lib/x86_64-linux-gnu:/opt/ros/foxy/lib PYTHONPATH=/home/jun/ros2_ws/install/realsense2_camera_msgs/lib/python3.8/site-packages:/home/jun/ros2_ws/install/camera_viewer/lib/python3.8/site-packages:/home/jun/ros2_ws/install/motor_control/lib/python3.8/site-packages:/opt/ros/foxy/lib/python3.8/site-packages /usr/bin/cmake /home/jun/ros2_ws/src/realsense-ros/realsense2_description -DCMAKE_INSTALL_PREFIX=/home/jun/ros2_ws/install/realsense2_description
+[0.065s] -- The C compiler identification is GNU 9.4.0
+[0.113s] -- The CXX compiler identification is GNU 9.4.0
+[0.117s] -- Check for working C compiler: /usr/bin/cc
+[0.177s] -- Check for working C compiler: /usr/bin/cc -- works
+[0.177s] -- Detecting C compiler ABI info
+[0.238s] -- Detecting C compiler ABI info - done
+[0.249s] -- Detecting C compile features
+[0.249s] -- Detecting C compile features - done
+[0.251s] -- Check for working CXX compiler: /usr/bin/c++
+[0.322s] -- Check for working CXX compiler: /usr/bin/c++ -- works
+[0.323s] -- Detecting CXX compiler ABI info
+[0.394s] -- Detecting CXX compiler ABI info - done
+[0.404s] -- Detecting CXX compile features
+[0.405s] -- Detecting CXX compile features - done
+[0.407s] -- Found ament_cmake: 0.9.12 (/opt/ros/foxy/share/ament_cmake/cmake)
+[0.428s] -- Found PythonInterp: /usr/bin/python3 (found suitable version "3.8.10", minimum required is "3") 
+[0.429s] -- Using PYTHON_EXECUTABLE: /usr/bin/python3
+[0.656s] -- Configuring done
+[0.658s] -- Generating done
+[0.659s] -- Build files have been written to: /home/jun/ros2_ws/build/realsense2_description
+[0.662s] Invoked command in '/home/jun/ros2_ws/build/realsense2_description' returned '0': CMAKE_PREFIX_PATH=/home/jun/ros2_ws/install/realsense2_camera_msgs:/home/jun/ros2_ws/install/motor_control:/opt/ros/foxy:/home/jun/ros2_ws/install/camera_viewer:/home/jun/ros2_ws/install/realsense2_description:/home/jun/ros2_ws/install/realsense2_camera LD_LIBRARY_PATH=/home/jun/ros2_ws/install/realsense2_camera_msgs/lib:/home/jun/ros2_ws/install/realsense2_camera/lib:/opt/ros/foxy/opt/yaml_cpp_vendor/lib:/opt/ros/foxy/opt/rviz_ogre_vendor/lib:/opt/ros/foxy/lib/x86_64-linux-gnu:/opt/ros/foxy/lib PYTHONPATH=/home/jun/ros2_ws/install/realsense2_camera_msgs/lib/python3.8/site-packages:/home/jun/ros2_ws/install/camera_viewer/lib/python3.8/site-packages:/home/jun/ros2_ws/install/motor_control/lib/python3.8/site-packages:/opt/ros/foxy/lib/python3.8/site-packages /usr/bin/cmake /home/jun/ros2_ws/src/realsense-ros/realsense2_description -DCMAKE_INSTALL_PREFIX=/home/jun/ros2_ws/install/realsense2_description
+[0.665s] Invoking command in '/home/jun/ros2_ws/build/realsense2_description': CMAKE_PREFIX_PATH=/home/jun/ros2_ws/install/realsense2_camera_msgs:/home/jun/ros2_ws/install/motor_control:/opt/ros/foxy:/home/jun/ros2_ws/install/camera_viewer:/home/jun/ros2_ws/install/realsense2_description:/home/jun/ros2_ws/install/realsense2_camera LD_LIBRARY_PATH=/home/jun/ros2_ws/install/realsense2_camera_msgs/lib:/home/jun/ros2_ws/install/realsense2_camera/lib:/opt/ros/foxy/opt/yaml_cpp_vendor/lib:/opt/ros/foxy/opt/rviz_ogre_vendor/lib:/opt/ros/foxy/lib/x86_64-linux-gnu:/opt/ros/foxy/lib PYTHONPATH=/home/jun/ros2_ws/install/realsense2_camera_msgs/lib/python3.8/site-packages:/home/jun/ros2_ws/install/camera_viewer/lib/python3.8/site-packages:/home/jun/ros2_ws/install/motor_control/lib/python3.8/site-packages:/opt/ros/foxy/lib/python3.8/site-packages /usr/bin/cmake --build /home/jun/ros2_ws/build/realsense2_description -- -j6 -l6
+[0.700s] Invoked command in '/home/jun/ros2_ws/build/realsense2_description' returned '0': CMAKE_PREFIX_PATH=/home/jun/ros2_ws/install/realsense2_camera_msgs:/home/jun/ros2_ws/install/motor_control:/opt/ros/foxy:/home/jun/ros2_ws/install/camera_viewer:/home/jun/ros2_ws/install/realsense2_description:/home/jun/ros2_ws/install/realsense2_camera LD_LIBRARY_PATH=/home/jun/ros2_ws/install/realsense2_camera_msgs/lib:/home/jun/ros2_ws/install/realsense2_camera/lib:/opt/ros/foxy/opt/yaml_cpp_vendor/lib:/opt/ros/foxy/opt/rviz_ogre_vendor/lib:/opt/ros/foxy/lib/x86_64-linux-gnu:/opt/ros/foxy/lib PYTHONPATH=/home/jun/ros2_ws/install/realsense2_camera_msgs/lib/python3.8/site-packages:/home/jun/ros2_ws/install/camera_viewer/lib/python3.8/site-packages:/home/jun/ros2_ws/install/motor_control/lib/python3.8/site-packages:/opt/ros/foxy/lib/python3.8/site-packages /usr/bin/cmake --build /home/jun/ros2_ws/build/realsense2_description -- -j6 -l6
+[0.721s] Invoking command in '/home/jun/ros2_ws/build/realsense2_description': CMAKE_PREFIX_PATH=/home/jun/ros2_ws/install/realsense2_camera_msgs:/home/jun/ros2_ws/install/motor_control:/opt/ros/foxy:/home/jun/ros2_ws/install/camera_viewer:/home/jun/ros2_ws/install/realsense2_description:/home/jun/ros2_ws/install/realsense2_camera LD_LIBRARY_PATH=/home/jun/ros2_ws/install/realsense2_camera_msgs/lib:/home/jun/ros2_ws/install/realsense2_camera/lib:/opt/ros/foxy/opt/yaml_cpp_vendor/lib:/opt/ros/foxy/opt/rviz_ogre_vendor/lib:/opt/ros/foxy/lib/x86_64-linux-gnu:/opt/ros/foxy/lib PYTHONPATH=/home/jun/ros2_ws/install/realsense2_camera_msgs/lib/python3.8/site-packages:/home/jun/ros2_ws/install/camera_viewer/lib/python3.8/site-packages:/home/jun/ros2_ws/install/motor_control/lib/python3.8/site-packages:/opt/ros/foxy/lib/python3.8/site-packages /usr/bin/cmake --install /home/jun/ros2_ws/build/realsense2_description
+[0.728s] -- Install configuration: ""
+[0.729s] -- Installing: /home/jun/ros2_ws/install/realsense2_description/share/realsense2_description/launch
+[0.729s] -- Installing: /home/jun/ros2_ws/install/realsense2_description/share/realsense2_description/launch/view_model.launch.py
+[0.729s] -- Installing: /home/jun/ros2_ws/install/realsense2_description/share/realsense2_description/launch/launch_utils.py
+[0.729s] -- Installing: /home/jun/ros2_ws/install/realsense2_description/share/realsense2_description/meshes
+[0.729s] -- Installing: /home/jun/ros2_ws/install/realsense2_description/share/realsense2_description/meshes/plug_collision.stl
+[0.729s] -- Installing: /home/jun/ros2_ws/install/realsense2_description/share/realsense2_description/meshes/l515.dae
+[0.759s] -- Installing: /home/jun/ros2_ws/install/realsense2_description/share/realsense2_description/meshes/d455.stl
+[0.761s] -- Installing: /home/jun/ros2_ws/install/realsense2_description/share/realsense2_description/meshes/plug.stl
+[0.762s] -- Installing: /home/jun/ros2_ws/install/realsense2_description/share/realsense2_description/meshes/d415.stl
+[0.781s] -- Installing: /home/jun/ros2_ws/install/realsense2_description/share/realsense2_description/meshes/d405.stl
+[0.781s] -- Installing: /home/jun/ros2_ws/install/realsense2_description/share/realsense2_description/meshes/d435.dae
+[0.796s] -- Installing: /home/jun/ros2_ws/install/realsense2_description/share/realsense2_description/rviz
+[0.796s] -- Installing: /home/jun/ros2_ws/install/realsense2_description/share/realsense2_description/rviz/urdf.rviz
+[0.796s] -- Installing: /home/jun/ros2_ws/install/realsense2_description/share/realsense2_description/urdf
+[0.796s] -- Installing: /home/jun/ros2_ws/install/realsense2_description/share/realsense2_description/urdf/test_r410_camera.urdf.xacro
+[0.796s] -- Installing: /home/jun/ros2_ws/install/realsense2_description/share/realsense2_description/urdf/_d435i.urdf.xacro
+[0.796s] -- Installing: /home/jun/ros2_ws/install/realsense2_description/share/realsense2_description/urdf/test_d415_camera.urdf.xacro
+[0.797s] -- Installing: /home/jun/ros2_ws/install/realsense2_description/share/realsense2_description/urdf/_r410.urdf.xacro
+[0.797s] -- Installing: /home/jun/ros2_ws/install/realsense2_description/share/realsense2_description/urdf/_materials.urdf.xacro
+[0.797s] -- Installing: /home/jun/ros2_ws/install/realsense2_description/share/realsense2_description/urdf/test_r430_camera.urdf.xacro
+[0.797s] -- Installing: /home/jun/ros2_ws/install/realsense2_description/share/realsense2_description/urdf/_r430.urdf.xacro
+[0.797s] -- Installing: /home/jun/ros2_ws/install/realsense2_description/share/realsense2_description/urdf/_d435.urdf.xacro
+[0.797s] -- Installing: /home/jun/ros2_ws/install/realsense2_description/share/realsense2_description/urdf/_d435i_imu_modules.urdf.xacro
+[0.797s] -- Installing: /home/jun/ros2_ws/install/realsense2_description/share/realsense2_description/urdf/test_d435_multiple_cameras.urdf.xacro
+[0.797s] -- Installing: /home/jun/ros2_ws/install/realsense2_description/share/realsense2_description/urdf/test_d405_camera.urdf.xacro
+[0.797s] -- Installing: /home/jun/ros2_ws/install/realsense2_description/share/realsense2_description/urdf/_usb_plug.urdf.xacro
+[0.797s] -- Installing: /home/jun/ros2_ws/install/realsense2_description/share/realsense2_description/urdf/test_d435_camera.urdf.xacro
+[0.797s] -- Installing: /home/jun/ros2_ws/install/realsense2_description/share/realsense2_description/urdf/_d455.urdf.xacro
+[0.797s] -- Installing: /home/jun/ros2_ws/install/realsense2_description/share/realsense2_description/urdf/_d405.urdf.xacro
+[0.797s] -- Installing: /home/jun/ros2_ws/install/realsense2_description/share/realsense2_description/urdf/test_d435i_camera.urdf.xacro
+[0.797s] -- Installing: /home/jun/ros2_ws/install/realsense2_description/share/realsense2_description/urdf/test_d455_camera.urdf.xacro
+[0.797s] -- Installing: /home/jun/ros2_ws/install/realsense2_description/share/realsense2_description/urdf/_d415.urdf.xacro
+[0.798s] -- Installing: /home/jun/ros2_ws/install/realsense2_description/share/ament_index/resource_index/package_run_dependencies/realsense2_description
+[0.798s] -- Installing: /home/jun/ros2_ws/install/realsense2_description/share/ament_index/resource_index/parent_prefix_path/realsense2_description
+[0.798s] -- Installing: /home/jun/ros2_ws/install/realsense2_description/share/realsense2_description/environment/ament_prefix_path.sh
+[0.798s] -- Installing: /home/jun/ros2_ws/install/realsense2_description/share/realsense2_description/environment/ament_prefix_path.dsv
+[0.798s] -- Installing: /home/jun/ros2_ws/install/realsense2_description/share/realsense2_description/environment/path.sh
+[0.798s] -- Installing: /home/jun/ros2_ws/install/realsense2_description/share/realsense2_description/environment/path.dsv
+[0.799s] -- Installing: /home/jun/ros2_ws/install/realsense2_description/share/realsense2_description/local_setup.bash
+[0.799s] -- Installing: /home/jun/ros2_ws/install/realsense2_description/share/realsense2_description/local_setup.sh
+[0.799s] -- Installing: /home/jun/ros2_ws/install/realsense2_description/share/realsense2_description/local_setup.zsh
+[0.799s] -- Installing: /home/jun/ros2_ws/install/realsense2_description/share/realsense2_description/local_setup.dsv
+[0.799s] -- Installing: /home/jun/ros2_ws/install/realsense2_description/share/realsense2_description/package.dsv
+[0.799s] -- Installing: /home/jun/ros2_ws/install/realsense2_description/share/ament_index/resource_index/packages/realsense2_description
+[0.799s] -- Installing: /home/jun/ros2_ws/install/realsense2_description/share/realsense2_description/cmake/realsense2_descriptionConfig.cmake
+[0.799s] -- Installing: /home/jun/ros2_ws/install/realsense2_description/share/realsense2_description/cmake/realsense2_descriptionConfig-version.cmake
+[0.799s] -- Installing: /home/jun/ros2_ws/install/realsense2_description/share/realsense2_description/package.xml
+[0.802s] Invoked command in '/home/jun/ros2_ws/build/realsense2_description' returned '0': CMAKE_PREFIX_PATH=/home/jun/ros2_ws/install/realsense2_camera_msgs:/home/jun/ros2_ws/install/motor_control:/opt/ros/foxy:/home/jun/ros2_ws/install/camera_viewer:/home/jun/ros2_ws/install/realsense2_description:/home/jun/ros2_ws/install/realsense2_camera LD_LIBRARY_PATH=/home/jun/ros2_ws/install/realsense2_camera_msgs/lib:/home/jun/ros2_ws/install/realsense2_camera/lib:/opt/ros/foxy/opt/yaml_cpp_vendor/lib:/opt/ros/foxy/opt/rviz_ogre_vendor/lib:/opt/ros/foxy/lib/x86_64-linux-gnu:/opt/ros/foxy/lib PYTHONPATH=/home/jun/ros2_ws/install/realsense2_camera_msgs/lib/python3.8/site-packages:/home/jun/ros2_ws/install/camera_viewer/lib/python3.8/site-packages:/home/jun/ros2_ws/install/motor_control/lib/python3.8/site-packages:/opt/ros/foxy/lib/python3.8/site-packages /usr/bin/cmake --install /home/jun/ros2_ws/build/realsense2_description

@@ -1,0 +1,4 @@
+source;share/camera_viewer/local_setup.bash
+source;share/camera_viewer/local_setup.dsv
+source;share/camera_viewer/local_setup.sh
+source;share/camera_viewer/local_setup.zsh
